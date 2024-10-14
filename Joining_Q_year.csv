@@ -1,0 +1,22 @@
+--Combining all five tables using UNION
+ -- Note: adjust query settings in BigQuery; For Destination, choose 'Set a destination table for query results'
+
+SELECT
+*
+FROM 
+`tripdata-429912.tripdata_quater_1.tripdata_quater_1`
+UNION DISTINCT  
+SELECT 
+*
+FROM
+`tripdata-429912.tripdata_quater_2.tripdata_quater_2`
+UNION DISTINCT
+SELECT
+*
+FROM
+`tripdata-429912.tripdata_quater_3.tripdata_quater_3`
+UNION DISTINCT
+SELECT
+*
+FROM
+`tripdata-429912.tripdata_quater_4.tripdata_quater_4`
